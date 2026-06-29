@@ -3,39 +3,74 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <section className="page">
-      <p className="eyebrow">Welcome</p>
-      <h1>Data solutions that scale with your business</h1>
+      <p className="eyebrow">DSP Care Solutions</p>
+      <h1>So providers can focus on what matters most: caring for people</h1>
       <p className="lead">
-        DSP Company helps teams turn raw data into reliable insights with modern analytics,
-        engineering, and cloud infrastructure.
+        We build tools and services that help independent providers and direct support
+        professionals across Ohio spend less time on paperwork and more time supporting
+        individuals with intellectual and developmental disabilities to live full, meaningful lives.
       </p>
 
       <div className="card-grid">
         <article className="card">
-          <h2>Analytics</h2>
+          <h2>Empowering providers</h2>
           <p>
-            Dashboards, reporting pipelines, and self-serve metrics so stakeholders can
-            make decisions with confidence.
+            Independent providers carry enormous responsibility. We remove friction from
+            daily operations so they can do what they do best — provide compassionate,
+            person-centered care.
           </p>
         </article>
         <article className="card">
-          <h2>Engineering</h2>
+          <h2>Supporting DSPs</h2>
           <p>
-            Robust data pipelines, warehouse modeling, and automation built for
-            maintainability and growth.
+            Direct support professionals are caregivers, teachers, mentors, and advocates.
+            Our growing offering is built around the people who make community inclusion
+            possible every day.
           </p>
         </article>
         <article className="card">
-          <h2>Strategy</h2>
+          <h2>Transparency &amp; compliance</h2>
           <p>
-            Practical roadmaps that align tooling, team skills, and business goals
-            without over-engineering.
+            We help providers and government agencies meet policy requirements with clarity,
+            fostering fairness and equity in the communities we call home.
+          </p>
+        </article>
+      </div>
+
+      <article className="content-block product-highlight">
+        <p className="eyebrow">Flagship product</p>
+        <h2>easyIP Ohio</h2>
+        <p>
+          Our flagship platform,{' '}
+          <a href="https://easyip-ohio.com" target="_blank" rel="noopener noreferrer">
+            easyIP Ohio
+          </a>
+          , is purpose-built for independent providers navigating Ohio&apos;s developmental
+          disabilities system — simplifying workflows so care stays at the center.
+        </p>
+      </article>
+
+      <div className="card-grid">
+        <article className="card">
+          <h2>Innovation with purpose</h2>
+          <p>
+            We leverage thoughtful, responsible AI to improve the caregiving experience
+            and strengthen the systems that support providers — not replace the human
+            connection at the heart of this work.
+          </p>
+        </article>
+        <article className="card">
+          <h2>Across all 88 counties</h2>
+          <p>
+            Ohio&apos;s special needs community is statewide. We are building solutions
+            designed to reach every county, every provider, and every individual who
+            deserves equitable access to quality support.
           </p>
         </article>
       </div>
 
       <p className="cta-text">
-        Want to learn more about who we are and how we work?{' '}
+        Learn more about our mission, our values, and the role of direct support professionals.{' '}
         <Link to="/about">Visit the About page</Link>.
       </p>
     </section>

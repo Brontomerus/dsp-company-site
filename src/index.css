@@ -173,6 +173,22 @@ a:hover {
   color: var(--muted);
 }
 
+.product-highlight {
+  margin-bottom: 1rem;
+  border-color: #bfdbfe;
+  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+}
+
+.product-highlight h2 {
+  margin-top: 0.25rem;
+}
+
+.source-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .not-found {
   text-align: center;
   padding-block: 2rem;

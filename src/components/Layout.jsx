@@ -6,7 +6,7 @@ export default function Layout() {
       <header className="header">
         <div className="container header-inner">
           <NavLink to="/" className="logo">
-            DSP Company
+            DSP Care Solutions
           </NavLink>
           <nav className="nav">
             <NavLink to="/" end className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
@@ -27,7 +27,7 @@ export default function Layout() {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} DSP Company. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} DSP Care Solutions. All rights reserved.</p>
         </div>
       </footer>
     </div>
