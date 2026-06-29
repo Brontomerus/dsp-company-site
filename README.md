@@ -13,10 +13,26 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ## Deploy to GitHub Pages
 
-1. Push this repository to GitHub.
-2. In the repo, go to **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Push to the `master` branch — the workflow in `.github/workflows/deploy.yml` builds and deploys automatically.
+All development happens on **`master`**. Every push to `master` triggers a build and deploy — no separate branch is required.
+
+### One-time GitHub setup
+
+1. Push this repository to GitHub on the `master` branch.
+2. Go to **Settings → Pages**.
+3. Under **Build and deployment → Source**, select **GitHub Actions** (not "Deploy from a branch").
+4. Push to `master` (or run the workflow manually from the **Actions** tab).
+
+The workflow checks out `master`, runs `npm run build`, and publishes the compiled `dist/` folder.
+
+### Important
+
+| Setting | Correct | Wrong |
+|---------|---------|-------|
+| Pages source | **GitHub Actions** | Deploy from a branch |
+| Branch you edit | **`master`** | `gh-pages` |
+| What gets served | Built `dist/` output | Raw source files |
+
+If Pages is set to **Deploy from a branch → master**, visitors get unbuilt `.jsx` files and the site breaks with a MIME type error. You still only use `master` for code — GitHub Actions builds it before serving.
 
 ## Custom domain
 
